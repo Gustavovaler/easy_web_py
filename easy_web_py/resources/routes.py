@@ -7,7 +7,7 @@
 
 routes_list = [
 
-    {'path': '/', 'controller': 'indexController'},
+    {"path": '/home', 'controller': 'indexController'},
 
 
 ]

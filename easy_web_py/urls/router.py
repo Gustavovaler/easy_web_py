@@ -9,7 +9,7 @@ class Router(MainHandler):
 
     def do_GET(self):
         message = "<h1>Hola  todos</h1>"
-        print(routes_list)
+        super().do_print()
 
         self.send_response(200)
         self.send_header('Content-Type', 'text/html')

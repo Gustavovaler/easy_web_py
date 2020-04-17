@@ -1,7 +1,9 @@
 from http.server import BaseHTTPRequestHandler
+from resources.routes import routes_list
 
 
 class MainHandler(BaseHTTPRequestHandler):
 
-    def get_routes_list(self, routes_list):
+    def do_print(self):
+        print(self.path)
         print(routes_list)

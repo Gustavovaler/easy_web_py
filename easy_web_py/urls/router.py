@@ -11,7 +11,7 @@ class Router(MainHandler):
     #  resources->routes->routes_list
 
     def call_controller(self, path):
-        print(self.call_controller)
+        
         self.send_response(200)
         self.send_header('Content-Type', 'text/html')
         self.end_headers()

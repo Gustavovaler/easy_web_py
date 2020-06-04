@@ -1,8 +1,9 @@
 from http.server import BaseHTTPRequestHandler
-from resources.routes import routes_list
+from ..resources.routes import routes_list
 
 
 class MainHandler(BaseHTTPRequestHandler):
+    print(routes_list)
 
     def parse_path(self):
         for route in routes_list:
